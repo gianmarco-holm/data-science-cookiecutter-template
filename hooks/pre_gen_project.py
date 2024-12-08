@@ -46,11 +46,11 @@ for field, value in validations.items():
 # Verificación de existencia del repositorio
 if repository_url:
     if not check_repository_exists(repository_url):
-        print(f"{ERROR_COLOR}ADVERTENCIA: El repositorio {repository_url} no existe. Por favor, créalo sin README.{RESET_ALL}")
-        sys.exit(1)
+        print(f"{ERROR_COLOR}ADVERTENCIA: El repositorio {repository_url} no existe. Se marcará como 'Repositorio pendiente'.{RESET_ALL}")
+        repository_url = "Repositorio pendiente"
 else:
-    print(f"{ERROR_COLOR}ERROR: repository_url no proporcionada en la plantilla.{RESET_ALL}")
-    sys.exit(1)
+    print(f"{ERROR_COLOR}ADVERTENCIA: No se proporcionó un URL para el repositorio. Se marcará como 'Repositorio pendiente'.{RESET_ALL}")
+    repository_url = "Repositorio pendiente"
 
 print(f"{MESSAGE_COLOR}¡Todo listo! Estás a punto de crear algo increíble.")
 print(f"Creando el proyecto en {os.getcwd()}{RESET_ALL}")
