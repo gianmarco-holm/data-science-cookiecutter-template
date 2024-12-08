@@ -75,7 +75,7 @@ El script post_gen_project.py configurará automáticamente tu entorno virtual. 
     * Si Conda está instalado, creará y activará un entorno Conda, e instalará las dependencias.
     * Si Conda no está disponible, creará y activará un entorno venv, e instalará las dependencias.
 
-> Se recomienda tener ya y activado el entorno virtual de conda
+> Se recomienda no tener creado el entorno y tener instalado conda.
 
 ### 5. Inicializar Git
 
