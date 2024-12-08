@@ -1,0 +1,13 @@
+{
+    "project_name": "Predicción de ventas",
+    "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-').replace('.', '-').replace('!', '')}}",
+    "project_short_description": "Un sistema de predicción de ventas que utiliza machine learning para estimar el rendimiento mensual de una tienda minorista.",
+    "problem_statement": "Las empresas minoristas necesitan predecir las ventas futuras para optimizar el inventario y los recursos. Este proyecto busca desarrollar un modelo predictivo basado en datos históricos de ventas y variables externas, como tendencias de mercado y estacionalidad.",
+    "repository_url": "https://github.com/usuario/prediccion-de-ventas",
+    "year": "2024",
+    "author_name": "Gianmarco Holm",
+    "contact_email": "gianmarco.holgado@gmail.com",
+    "author_linkedin": "https://www.linkedin.com/in/gianmarco-holm/",
+    "install_mode": ["Minimal", "All"],
+    "python_version": ["3.12", "3.11", "3.10", "3.9", "3.8"]
+}

@@ -1,0 +1,34 @@
+name: {{ cookiecutter.project_slug }}
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python={{ cookiecutter.python_version }}
+
+  {% if cookiecutter.install_mode == "All" %}
+  # Dependencias para el desarrollo completo
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - joblib
+  - pytest
+  - black
+  - pre-commit
+  - pip
+  - pip:
+      - cookiecutter
+      - fastapi
+      - uvicorn
+  {% elif cookiecutter.install_mode == "Minimal" %}
+  # Dependencias mínimas para ejecutar el proyecto
+  - numpy
+  - pandas
+  - pip
+  - pip:
+      - cookiecutter
+  {% endif %}

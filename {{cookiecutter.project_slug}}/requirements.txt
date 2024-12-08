@@ -1,0 +1,22 @@
+# Dependencias mínimas o completas según la elección de install_mode
+
+# Paquetes básicos
+numpy
+pandas
+
+
+{% if cookiecutter.install_mode == "All" %}
+# Visualización y desarrollo
+matplotlib
+seaborn
+scikit-learn
+jupyterlab
+pytest
+black
+pre-commit
+
+# Frameworks y herramientas adicionales
+cookiecutter
+fastapi
+uvicorn
+{% endif %}
